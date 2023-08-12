@@ -17,7 +17,6 @@ const ResumePage = () => {
         <ResumeCard />
         <ResumeCard />
         <ResumeCard />
-        
       </section>
       <PageHeading>My Skills</PageHeading>
       {/* GRID */}

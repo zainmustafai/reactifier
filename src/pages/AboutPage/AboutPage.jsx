@@ -6,7 +6,7 @@ import Testimonials from "./components/Testimonials";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="" >
       <PageHeading>
         About <span className="text-primary">Me</span>
       </PageHeading>

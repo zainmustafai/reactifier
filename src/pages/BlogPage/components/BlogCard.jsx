@@ -7,7 +7,7 @@ const BlogCard = () => {
         <img
           src="https://picsum.photos/400/250"
           alt="Blog"
-          className="w-full h-56 lg:h-96 object-cover hover:scale-105 transition-all duration-300  ease-in-out transform-gpu  dark:filter dark:grayscale dark:contrast-1 hover:grayscale-0 hover:contrast-100"
+          className="w-full h-56 lg:h-96 object-cover hover:scale-105 transition-all duration-300  ease-in-out transform-gpu"
         />
       </figure>
 

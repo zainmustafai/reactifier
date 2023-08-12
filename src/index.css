@@ -17,11 +17,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/* src/index.css */
-/* Dark theme styles */
-/* .dark {
-  background-color: #121212;
-  color: #ffffff;
+/* #tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 100%;
 } */
 
 /* Customize the scrollbar for webkit (Chrome, Safari) */
@@ -62,4 +63,3 @@ body.dark ::-webkit-scrollbar-thumb {
 body.dark ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-

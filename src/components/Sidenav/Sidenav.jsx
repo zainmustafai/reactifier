@@ -59,6 +59,10 @@ const Sidenav = () => {
           </Link>
         </li>
       ))}
+      <footer className="fixed p-4 bottom-0 flex flex-col border-t">
+        <span className="text-sm">Made with ❤️ by <a href="https://www.github.com/zainmustafai">Zain Ul Abidin</a> </span>
+        <span className="text-sm">© 2023 All rights reserved.</span>
+      </footer>
     </ul>
   );
 };

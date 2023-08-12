@@ -1,13 +1,17 @@
-import React from "react";
-
 import { socialLinks } from "../../data/socialLinks";
+import ParticlesComponent from "./components/ParticlesComponent";
 const HomePage = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-full">
+      <div className="" >
+        <ParticlesComponent />
+      </div>
       <div className="container m-auto text-center">
-        <h1 className="text-4xl font-bold  dark:text-white">
+        <h1 className=" text-3xl md:text-4xl font-bold  dark:text-white">
           Hello I'm{" "}
-          <span className="text-primary dark:text-primary ">JOHN DOE.</span>
+          <span className="text-primary dark:text-primary  ">
+            Zain Ul Abidin.
+          </span>
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mt-4 text-lg">
           I'm a freelance react developer. I can provide clean code and pixel

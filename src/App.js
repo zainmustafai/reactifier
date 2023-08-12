@@ -6,16 +6,17 @@ import { useTheme } from "./ThemeContext";
 import ThemeSwitchIcon from "./components/ThemeSwitchIcon/ThemeSwitchIcon";
 
 function App() {
+  // ------------------------------------------------------------
   const [showNav, setShowNav] = useState(false);
   const [showThemeSelector, setShowThemeSelector] = useState(false);
   const { isDarkMode } = useTheme();
 
   return (
-    <div className={`flex ${isDarkMode ? "dark" : "light"} `}>
+    <div className={`flex bg-light   ${isDarkMode ? "dark" : "light"}`}>
       <section>
         {/* SETTINGS ROTATING GEAR */}
         <button
-          className="fixed top-[45%] right-0"
+          className="fixed top-[45%] right-0 z-50"
           onClick={() => setShowThemeSelector(!showThemeSelector)}
         >
           <RotatingGear className="" />
@@ -30,25 +31,26 @@ function App() {
           <ToggleSwitch />
         </div>
       </section>
-
       {/* SIDE NAVIGATION */}
+      {/* NAV ELEMENT */}
+      <nav
+        className={`h-[100vh] max-h-[100vh] overflow-auto border-r w-[300px] md:static dark:border-r-darkGray  ${
+          showNav ? "absolute z-[100] left-0 w-[250px]" : "fixed -left-full"
+        } bg-white relative z-50 dark:bg-black transition-all duration-300 ease-in-out `}
+      >
+        <Sidenav />
+      </nav>
       <button
-        className="fixed top-8 right-8 aspect-square ripple-container z-10"
+        className="fixed top-8 right-8 aspect-square ripple-container z-20 "
         onClick={() => setShowNav(!showNav)}
       >
         <MenuOutlined className="text-2xl md:hidden p-2 text-dark dark:text-white " />
       </button>
-      <nav
-        className={`h-[100vh] max-h-[100vh] overflow-auto border-r w-[300px] md:static dark:border-r-darkGray  ${
-          showNav ? "fixed z-10 left-0 w-[250px]" : "fixed -left-full"
-        } bg-white dark:bg-black transition-all duration-300 ease-in-out `}
-      >
-        <Sidenav />
-      </nav>
 
-      <div className="h-[100vh] max-h-[100vh] overflow-y-auto w-full px-8 md:px-12 pb-16 overflow-hidden bg-light dark:bg-dark text-dark dark:text-white transition-all duration-500 ">
+      <main className=" relative z-10 h-[100vh] max-h-[100vh] overflow-y-auto w-full px-8 md:px-12 pb-16 overflow-hidden text-dark dark:text-white transition-all dark:bg-dark duration-500">
         <RoutesContainer />
-      </div>
+      </main>
+      
     </div>
   );
 }
