@@ -22,7 +22,7 @@ function App() {
         </button>
         {/* TOGGLER BUTTON */}
         <div
-          className={`p-2 bg-primary fixed z-50 bg-opacity-80 top-[55%] transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
+          className={`p-2 bg-primary fixed z-[100] bg-opacity-80 top-[55%] transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
             showThemeSelector ? "-right-52" : "right-0"
           } `}
         >
@@ -33,7 +33,7 @@ function App() {
 
       {/* SIDE NAVIGATION */}
       <button
-        className="fixed top-8 right-8 aspect-square ripple-container"
+        className="fixed top-8 right-8 aspect-square ripple-container z-10"
         onClick={() => setShowNav(!showNav)}
       >
         <MenuOutlined className="text-2xl md:hidden p-2 text-dark dark:text-white " />
@@ -46,7 +46,7 @@ function App() {
         <Sidenav />
       </nav>
 
-      <div className="h-[100vh] max-h-[100vh] overflow-y-auto w-full px-8 md:px-12 overflow-hidden bg-light dark:bg-dark text-dark dark:text-white transition-all duration-500 ">
+      <div className="h-[100vh] max-h-[100vh] overflow-y-auto w-full px-8 md:px-12 pb-16 overflow-hidden bg-light dark:bg-dark text-dark dark:text-white transition-all duration-500 ">
         <RoutesContainer />
       </div>
     </div>

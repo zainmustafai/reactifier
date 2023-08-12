@@ -1,12 +1,12 @@
-import { DollarOutlined, DollarCircleOutlined } from "@ant-design/icons";
 import React from "react";
+import DiamondIcon from "./DiamondIcon";
 
 const PricePlanCard = () => {
   return (
     <div className="max-w-md mx-auto bg-white dark:bg-black shadow-lg rounded-lg p-6">
       <div className="text-center">
-        <div className="text-3xl text-primary">
-          <DollarCircleOutlined />
+        <div className="text-8xl text-primary">
+          <DiamondIcon className="w-20 mx-auto" fill="#fefe" />
         </div>
         <h2 className="text-xl font-semibold mt-4">Premium Plan</h2>
         <p className="text-gray-600 mt-2">
