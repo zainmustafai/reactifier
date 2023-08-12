@@ -113,5 +113,94 @@ export const Services = [
     title: "Cross Browser Compatible",
     description: "I can make your website cross browser compatible.",
     icon: "📱", // Add an appropriate icon
-  }
+  },
+];
+
+export const PricingPlans = [
+  {
+    id: 1,
+    title: "Basic Plan",
+    price: "$190",
+    features: [
+      "Web Development",
+      "Database Design",
+      "Responsive Design",
+      "Limited Support",
+    ],
+    color: "bg-primary",
+  },
+  {
+    id: 2,
+    title: "Standard Plan",
+    price: "$490",
+    features: [
+      "Web Development",
+      "Database Design",
+      "Responsive Design",
+      "Unlimited Support",
+      "API Development",
+    ],
+    color: "bg-secondary",
+  },
+  {
+    id: 3,
+    title: "Premium Plan",
+    price: "$990",
+    features: [
+      "Web Development",
+      "Database Design",
+      "Responsive Design",
+      "Unlimited Support",
+      "API Development",
+      "Mobile App Development",
+    ],
+    color: "bg-tertiary",
+  },
+];
+
+export const EducationData = [
+  {
+    id: 1,
+    title: "Bachelor of Science in Information Technology",
+    institute: "University of Gujrat",
+    duration: "2019 - 2023",
+    description: "I am currently studying in 8th semester.",
+  },
+  {
+    id: 2,
+    title: "Intermediate",
+    institute: "M.A Jinnah College Jhelum.",
+    duration: "2017 - 2019",
+    description: "I have done my intermediate in 2019 with 80% marks.",
+  },
+  {
+    id: 3,
+    title: "Matriculation",
+    institute: "F.G Boys High School Jhelum Cantt.",
+    duration: "2015 - 2017",
+    description: "I have done my matriculation in 2017 with 85% marks.",
+  },
+];
+
+export const ExperienceData = [
+  {
+    id: 1,
+    title: "Full Stack Web Developer",
+    institute: "Fiverr.com",
+    duration: "2019 - Present",
+    description:
+      "I have experience in developing websites using React, HTML, CSS, JavaScript and many more.",
+  },
+  {
+    id: 2,
+    title: "Full Stack Web Developer",
+    institute: "DAR BPO",
+    duration: "2023 - Present",
+  },
+  {
+    id: 3,
+    title: "Logo Designer",
+    institute: "Fiverr.com",
+    duration: "2019 - Present",
+  },
 ];

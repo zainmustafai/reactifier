@@ -1,6 +1,6 @@
 import React from "react";
 
-const ResumeCard = () => {
+const ResumeCard = ({ institute, title, duration, description }) => {
   return (
     <div className="flex gap-6 w-full">
       {/* LEFT LONG DIV WITH BULLET. */}
@@ -8,15 +8,16 @@ const ResumeCard = () => {
         {/* BULLET */}
         <div className="rounded-full p-2 border-[3px] bg-light dark:bg-dark border-lightGray dark:border-darkBlue " />
       </div>
-      
+
       {/* RIGHT SHORT DIV WITH TEXT. */}
       <div className="pt-6 pb-16 space-y-2   ">
-        <h1 className="font-semibold text-xl">Computer Science</h1>
-        <h2 className="">University of California, Irvine</h2>
-        <p className="text-sm">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit,
-          quisquam!
+        <h1 className="font-semibold text-xl">{title}</h1>
+        <p className="flex gap-2">
+          <h2 className="">{institute}</h2>
+          <span>/</span>
+          <span className="text-sm">{duration}</span>
         </p>
+        <p className="text-lg">{description}</p>
       </div>
     </div>
   );
