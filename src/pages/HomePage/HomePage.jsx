@@ -1,4 +1,4 @@
-import { socialLinks } from "../../data/socialLinks";
+import { socialLinks } from "../../data/Datafile";
 import ParticlesComponent from "./components/ParticlesComponent";
 const HomePage = () => {
   return (

@@ -2,6 +2,7 @@ import React from "react";
 import PageHeading from "../../components/Sidenav/PageHeading/PageHeading";
 import ServiceCard from "./components/ServiceCard";
 import PricePlanCard from "./components/PricePlanCard";
+import { Services } from "../../data/Datafile";
 
 const GridSection = ({ children }) => {
   return (
@@ -16,12 +17,16 @@ const ServicesPage = () => {
     <div>
       <PageHeading>Services</PageHeading>
       <GridSection>
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
-        <ServiceCard />
+        {Services.map((service) => {
+          return (
+            <ServiceCard
+              key={service.id}
+              title={service.title}
+              description={service.description}
+              icon={service.icon}
+            />
+          );
+        })}
       </GridSection>
       <PageHeading>Choose a Plan</PageHeading>
       <GridSection>
