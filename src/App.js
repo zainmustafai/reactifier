@@ -37,7 +37,7 @@ function App() {
         </button>
         <div
           className={`p-2 bg-primary fixed z-[100] bg-opacity-80 top-[55%] transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
-            showThemeSelector ? "-right-52" : "right-0"
+            !showThemeSelector ? "-right-52" : "right-0"
           } `}
         >
           <ThemeSwitchIcon isDark={isDarkMode ? true : false} />
