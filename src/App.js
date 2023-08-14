@@ -19,9 +19,7 @@ function App() {
         isDarkMode ? "dark" : "light"
       }`}
     >
-      <div className="hidden lg:block" >
-        <CustomCursor />
-      </div>
+      <CustomCursor />
       <ScrollToTop />
       {/* Theme Selector */}
       <section>
@@ -60,7 +58,7 @@ function App() {
 
       {/* NAVBAR Toggle Button */}
       <button
-        className="fixed top-8 right-8 aspect-square z-20 p-1 lg:hidden bg-white bg-opacity-25 dark:bg-black hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out rounded-xl hover:shadow-sm active:scale-90"
+        className="fixed top-8 right-8 aspect-square z-20 p-1 lg:hidden bg-white bg-opacity-25 dark:bg-black dark:bg-opacity-25 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out rounded-xl hover:shadow-sm active:scale-90"
         onClick={() => setShowNav(!showNav)}
       >
         <MenuOutlined className="text-2xl p-2 text-dark dark:text-white " />

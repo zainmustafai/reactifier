@@ -8,114 +8,6 @@ import {
 import projectCoverImage from "./images/portfolio_project_cover.png";
 import blogCoverImage from "./images/blog-cover.png";
 
-export const portfolioProjects = [
-  {
-    id: 1,
-    title: "React Project 1",
-    category: "React",
-    description: "This is a React project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 2,
-    title: "React Project 2",
-    category: "React",
-    description: "This is another React project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 3,
-    title: "Node.js Project 1",
-    category: "Nodejs",
-    description: "This is a Node.js project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 4,
-    title: "React Native Project 1",
-    category: "React Native",
-    description: "This is a React Native project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 5,
-    title: "Ecommerce Project 1",
-    category: "Ecommerce",
-    description: "This is an Ecommerce project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  // Add more projects here...
-  {
-    id: 6,
-    title: "React Project 3",
-    category: "React",
-    description: "Another React project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 7,
-    title: "Node.js Project 2",
-    category: "Nodejs",
-    description: "Another Node.js project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 8,
-    title: "React Native Project 2",
-    category: "React Native",
-    description: "Another React Native project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 9,
-    title: "Ecommerce Project 2",
-    category: "Ecommerce",
-    description: "Another Ecommerce project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 10,
-    title: "Node.js Project 3",
-    category: "Nodejs",
-    description: "Yet another Node.js project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 11,
-    title: "React Project 4",
-    category: "React",
-    description: "Yet another React project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 12,
-    title: "React Native Project 3",
-    category: "React Native",
-    description: "Yet another React Native project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-  {
-    id: 13,
-    title: "Ecommerce Project 3",
-    category: "Ecommerce",
-    description: "Yet another Ecommerce project description",
-    image: projectCoverImage,
-    link: "https://www.google.com/",
-  },
-];
-
 export const blogPosts = [
   {
     id: 1,
@@ -200,13 +92,13 @@ export const blogPosts = [
 ];
 
 export const navLinks = [
-  { id: 1, name: "Home", link: "/" },
-  { id: 2, name: "About", link: "/about" },
-  { id: 3, name: "Services", link: "/services" },
-  { id: 4, name: "Resume", link: "/resume" },
-  { id: 5, name: "Portfolio", link: "/portfolio" },
-  { id: 6, name: "Blog", link: "/blog" },
-  { id: 7, name: "Contact", link: "/contact" },
+  { id: 1, title: "Home", path: "/" },
+  { id: 2, title: "About", path: "/about" },
+  { id: 3, title: "Services", path: "/services" },
+  { id: 4, title: "Resume", path: "/resume" },
+  { id: 5, title: "Portfolio", path: "/portfolio" },
+  // { id: 6, title: "Blog", path: "/blog" },
+  { id: 7, title: "Contact", path: "/contact" },
 ];
 
 export const socialLinks = [
@@ -214,37 +106,37 @@ export const socialLinks = [
     id: 1,
     name: "Facebook",
     icon: <FacebookFilled />,
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/zforzain2000",
   },
   {
     id: 2,
     name: "Instagram",
     icon: <InstagramFilled />,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/zforzain2000",
   },
   {
     id: 3,
     name: "Twitter",
     icon: <TwitterSquareFilled />,
-    link: "https://twitter.com/",
+    link: "https://twitter.com/zforzain2000",
   },
   {
     id: 4,
     name: "Linkedin",
     icon: <LinkedinFilled />,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/zforzain2000/",
   },
   {
     id: 5,
     name: "Github",
     icon: <GithubFilled />,
-    link: "https://www.github.com/",
+    link: "https://www.github.com/zforzain2000/",
   },
 ];
 
 export const HomePageData = {
   title: "Hello I'm ",
-  name: "Zain Ul Abidin.",
+  name: "Muhammad Zain Ul Abidin.",
   description:
     "I am full stack web developer. I have Experience in Developing Websites, Web Applications, Mobile Games (Android & IOS), and Flutter Mobile Applications. We are providing clean code.",
   socialLinks: socialLinks,
@@ -259,7 +151,7 @@ export const AboutPageData = {
   languages: "English, Urdu,Punjabi",
   cvLink: "https://www.google.com/",
   freelanceState: "Available",
-  freelanceLink: "https://www.google.com/",
+  freelanceLink: "https://www.fiverr.com/zainmustafai",
 };
 
 export const Services = [
@@ -267,7 +159,7 @@ export const Services = [
     id: 1,
     title: "Web Development",
     description:
-      "I have experience in developing websites using React, Next, Gatsby, HTML, CSS, JavaScript, Bootstrap, Tailwind, Material UI, Ant Design, Styled Components, and many more.",
+      "I have experience in developing websites using React, HTML, CSS, JavaScript, Bootstrap, Tailwind, Material UI, Ant Design, Styled Components, and many more.",
     icon: "💻", // Add an appropriate icon
     color: "bg-primary", // Choose a color class from your styles
   },
@@ -287,26 +179,21 @@ export const Services = [
     icon: "🚀", // Add an appropriate icon
     color: "bg-tertiary", // Choose a color class from your styles
   },
-  {
-    id: 4,
-    title: "Mobile App Development",
-    description:
-      "I have experience in developing mobile apps using Flutter, React Native, and many more.",
-    icon: "📱", // Add an appropriate icon
-    color: "bg-quaternary", // Choose a color class from your styles
-  },
+  // {
+  //   id: 4,
+  //   title: "Mobile App Development",
+  //   description:
+  //     "I have experience in developing mobile apps using React Native, and many more.",
+  //   icon: "📱", // Add an appropriate icon
+  //   color: "bg-quaternary", // Choose a color class from your styles
+  // },
   {
     id: 5,
     title: "Fully Responsive",
     description: "I can make your website fully responsive for all devices.",
     icon: "📱", // Add an appropriate icon
   },
-  {
-    id: 6,
-    title: "Cross Browser Compatible",
-    description: "I can make your website cross browser compatible.",
-    icon: "📱", // Add an appropriate icon
-  },
+  // s
 ];
 
 export const PricingPlans = [
@@ -389,11 +276,64 @@ export const ExperienceData = [
     title: "Full Stack Web Developer",
     institute: "DAR BPO",
     duration: "2023 - Present",
+    description:
+      "I have experience in developing websites using React, HTML, CSS, JavaScript and many more.",
   },
   {
     id: 3,
     title: "Logo Designer",
     institute: "Fiverr.com",
     duration: "2019 - Present",
+    description:
+      "I kick started my career as a logo designer. Later on, I started working as a web developer. ",
+  },
+];
+
+/***-------------------------------------------------- */
+
+export const portfolioProjects = [
+  {
+    id: 1,
+    title: "React Portfolio For a Friend.",
+    category: "React",
+    description:
+      "This  project was my first practice project in React. I learnt a lot from this project.",
+    image: projectCoverImage,
+    link: "https://www.github.com/zainmustafai",
+  },
+
+  {
+    id: 2,
+    title: "LMS-My Final Year Project",
+    category: "React",
+    description:
+      "GGC LMS is a learning management system for students and teachers. It is a web application developed using React, Node, Express, MongoDB, and many more. ",
+    image: projectCoverImage,
+    link: "https://www.github.com/zainmustafai",
+  },
+  {
+    id: 3,
+    title: "LMS Restful API",
+    category: "Nodejs",
+    description: "A Restful API for LMS project.",
+    image: projectCoverImage,
+    link: "https://www.github.com/zainmustafai",
+  },
+  {
+    id: 4,
+    title: "LGU- Lahore Garrison University LMS",
+    category: "React Native",
+    description:
+      "A small project for my friend. LGU LMS is a learning management system for students and teachers. It is a mobile application developed using React Native.",
+    image: projectCoverImage,
+    link: "https://www.github.com/zainmustafai",
+  },
+  {
+    id: 5,
+    title: "Ecommerce- Headphone Shop SPA",
+    category: "Ecommerce",
+    description: "A small ecommerce project for a client.",
+    image: projectCoverImage,
+    link: "https://www.github.com/zainmustafai",
   },
 ];

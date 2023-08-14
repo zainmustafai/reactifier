@@ -1,38 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import profileImage from "./profile_picture.png";
+import { navLinks } from "../../data/Datafile";
 
-const NavMenu = [
-  {
-    title: "Home",
-    path: "/",
-  },
-  {
-    title: "About",
-    path: "/about",
-  },
-  {
-    title: "Services",
-    path: "/services",
-  },
-  {
-    title: "Resume",
-    path: "/resume",
-  },
-  {
-    title: "Portfolio",
-    path: "/portfolio",
-  },
-
-  {
-    title: "Blog",
-    path: "/blog",
-  },
-  {
-    title: "Contact",
-    path: "/contact",
-  },
-];
 const Sidenav = () => {
   const [activeItem, setActiveItem] = useState("home");
   return (
@@ -45,7 +15,7 @@ const Sidenav = () => {
             className="w-full h-full rounded-full border-[8px]  dark:border-dark  "
           />
         </figure>
-        {NavMenu.map((item, index) => (
+        {navLinks.map((item, index) => (
           <li
             key={index}
             className="w-full h-full py-2 hover:bg-black dark:hover:bg-white dark:hover:bg-opacity-10 hover:bg-opacity-10 transition-all duration-100 ease-in-out"

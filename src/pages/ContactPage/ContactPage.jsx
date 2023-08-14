@@ -20,7 +20,7 @@ const ContactPage = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* CONTACT INFO SECTION */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Contact Info</h2>
+          <h2 className="text-3xl font-bold mb-4">📲 Contact Info</h2>
           <ContactInfoCard
             title={"Call me"}
             value={"+923021554648"}
@@ -29,7 +29,7 @@ const ContactPage = () => {
 
           <ContactInfoCard
             title={"Email me"}
-            value={"+923021554648"}
+            value={"zforzain2000@gmail.com"}
             icon={<MessageFilled className={ICON_CLASSES} />}
           />
 
@@ -41,11 +41,12 @@ const ContactPage = () => {
         </section>
         {/* CONTACT FORM SECTION */}
         <section>
-          <h2 className="text-3xl font-bold mb-4">Get in touch</h2>
+          <h2 className="text-3xl font-bold mb-4"> 📧 Get in touch</h2>
           {/* <ContactForm /> */}
           <a href="https://wa.me/+923021554648" className="text-primary">
             <button className="bg-primary text-white px-4 py-2 rounded-md">
-              <MessageOutlined size={20} /> Whatsapp
+              <MessageOutlined className="text-2xl font-black space-x-2" />{" "}
+              Whatsapp
             </button>
           </a>
         </section>
