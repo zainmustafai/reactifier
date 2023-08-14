@@ -27,9 +27,12 @@ const PricePlanCard = ({ plan }) => {
             );
           })}
         </ul>
-        <button className="mt-4 bg-primary text-white py-2 px-4 rounded-full hover:bg-primary-dark hover:px-6 transition-all duration-300 ">
-          Get Started
-        </button>
+
+        <a href={"https://www.fiverr.com/zainmustafai"}>
+          <button className="mt-4 bg-primary text-white py-2 px-4 rounded-full hover:bg-primary-dark hover:px-6 transition-all duration-300">
+            Get Started
+          </button>
+        </a>
       </div>
     </div>
   );

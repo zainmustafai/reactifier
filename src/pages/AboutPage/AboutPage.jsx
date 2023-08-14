@@ -2,7 +2,7 @@ import React from "react";
 import PageHeading from "../../components/Sidenav/PageHeading/PageHeading";
 import avatar from "./about-me-page-dispplay-image.png";
 import { CloudDownloadOutlined } from "@ant-design/icons";
-import Testimonials from "./components/Testimonials";
+// import Testimonials from "./components/Testimonials";
 
 const AboutPage = () => {
   return (
@@ -59,10 +59,16 @@ const AboutPage = () => {
                 <td className="py-2">: zforzain2000@gmail.com</td>
               </tr>
               <tr>
-                <button className="bg-primary font-semibold my-4 pl-6 pr-4 py-3 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100">
-                  <CloudDownloadOutlined className="font-bold text-2xl mr-2" />
-                  Download CV
-                </button>
+                <a
+                  href="https://drive.google.com/file/d/14fdpTj729PqsbQENiNhvTZSG8yprpWLG/view"
+                  __blank
+                  download={true}
+                >
+                  <button className="bg-primary font-semibold my-4 pl-6 pr-4 py-3 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100">
+                    <CloudDownloadOutlined className="font-bold text-2xl mr-2" />
+                    Download CV
+                  </button>
+                </a>
               </tr>
             </tbody>
           </table>
@@ -70,10 +76,10 @@ const AboutPage = () => {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="my-16">
+      {/* <section className="my-16">
         <PageHeading>Testimonials</PageHeading>
         <Testimonials />
-      </section>
+      </section> */}
     </div>
   );
 };

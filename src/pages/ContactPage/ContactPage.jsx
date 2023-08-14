@@ -1,8 +1,13 @@
 import React from "react";
 import PageHeading from "../../components/Sidenav/PageHeading/PageHeading";
 import ContactInfoCard from "./components/ContactInfoCard";
-import { PhoneFilled, MessageFilled, HomeFilled } from "@ant-design/icons";
-import ContactForm from "./components/ContactForm";
+import {
+  PhoneFilled,
+  MessageFilled,
+  HomeFilled,
+  MessageOutlined,
+} from "@ant-design/icons";
+// import ContactForm from "./components/ContactForm";
 const ICON_CLASSES =
   "text-4xl pr-4 border-r py-10 border-lightGray dark:border-darkBlue text-primary";
 
@@ -37,7 +42,12 @@ const ContactPage = () => {
         {/* CONTACT FORM SECTION */}
         <section>
           <h2 className="text-3xl font-bold mb-4">Get in touch</h2>
-          <ContactForm />
+          {/* <ContactForm /> */}
+          <a href="https://wa.me/+923021554648" className="text-primary">
+            <button className="bg-primary text-white px-4 py-2 rounded-md">
+              <MessageOutlined size={20} /> Whatsapp
+            </button>
+          </a>
         </section>
       </div>
     </div>
