@@ -12,7 +12,7 @@ const HomePage = () => {
         <h1 className=" text-3xl md:text-4xl font-bold  dark:text-white">
           Hello I'm{" "}
           <span className="text-primary dark:text-primary  ">
-            Zain Ul Abidin.
+            Muhammad Zain Ul Abidin.
           </span>
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mt-4 text-2xl">
@@ -34,23 +34,19 @@ const HomePage = () => {
               </a>
             );
           })}
-
-          {/* <FacebookFilled className="p-3 border-2 rounded-full hover:border-primary transition-all duration-500 mx-2 " />
-          <InstagramFilled className="p-3 border-2 rounded-full hover:border-primary transition-all duration-500 mx-2 " />
-          <TwitterSquareFilled className="p-3 border-2 rounded-full hover:border-primary transition-all duration-500 mx-2 " />
-          <LinkedinFilled className="p-3 border-2 rounded-full hover:border-primary transition-all duration-500 mx-2 " />
-          <GithubFilled className="p-3 border-2 rounded-full hover:border-primary transition-all duration-500 mx-2 " /> */}
         </section>
       </div>
 
       {/* LOGO */}
-      <div className="w-20 h-20 fixed bottom-20 right-20 z-50 rounded-full shadow-lg">
+      <div className="w-16 md:w-20 aspect-square fixed bottom-4 right-4 z-50 rounded-full shadow-lg">
         <img
           src={logo}
           alt="Logo"
           className="w-full h-full object-cover slow-spin"
         />
-        <p className="text-4xl font-light absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">R</p>
+        <p className="text-4xl font-light absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">
+          R
+        </p>
       </div>
     </div>
   );

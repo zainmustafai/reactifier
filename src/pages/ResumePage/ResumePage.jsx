@@ -48,16 +48,17 @@ const ResumePage = () => {
       <PageHeading>My Skills</PageHeading>
       {/* GRID */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8 container">
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
-        <SkillCard skillScore={80} skillName={"HTML"} />
+        <SkillCard skillScore={90} skillName={"HTML"} />
+        <SkillCard skillScore={65} skillName={"CSS"} />
+        <SkillCard skillScore={70} skillName={"JavaScript"} />
+        <SkillCard skillScore={80} skillName={"React"} />
+        <SkillCard skillScore={75} skillName={"Node"} />
+        <SkillCard skillScore={70} skillName={"Express"} />
+        <SkillCard skillScore={65} skillName={"MongoDB"} />
+        <SkillCard skillScore={60} skillName={"Firebase"} />
+        <SkillCard skillScore={60} skillName={"Database Design"} />
+        <SkillCard skillScore={60} skillName={"Restful APIs"} />
+
       </section>
     </div>
   );

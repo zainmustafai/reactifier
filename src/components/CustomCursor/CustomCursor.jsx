@@ -15,7 +15,6 @@ const CustomCursor = () => {
     };
     window.addEventListener("mousedown", handleClick);
     window.addEventListener("mouseup", () => setClicked(false));
-    window.addEventListener
     
   }, []);
 

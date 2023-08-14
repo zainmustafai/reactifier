@@ -19,7 +19,9 @@ function App() {
         isDarkMode ? "dark" : "light"
       }`}
     >
-      <CustomCursor />
+      <div>
+        <CustomCursor />
+      </div>
       <ScrollToTop />
       {/* Theme Selector */}
       <section>
@@ -56,12 +58,12 @@ function App() {
         </section>
       }
 
-      {/* Toggle Button */}
+      {/* NAVBAR Toggle Button */}
       <button
-        className="fixed top-8 right-8 aspect-square ripple-container z-20 "
+        className="fixed top-8 right-8 aspect-square z-20 p-1 md:hidden bg-white bg-opacity-25 dark:bg-black hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out rounded-xl hover:shadow-sm active:scale-90"
         onClick={() => setShowNav(!showNav)}
       >
-        <MenuOutlined className="text-2xl md:hidden p-2 text-dark dark:text-white " />
+        <MenuOutlined className="text-2xl p-2 text-dark dark:text-white " />
       </button>
 
       {/* Main Content */}
