@@ -29,14 +29,14 @@ function App() {
       <ScrollToTop />
       {/* Theme Selector */}
       <section>
-        <button
-          className="fixed top-[45%] right-0 z-50"
+        <div
+          className="fixed  top-[60%] right-0 z-50"
           onClick={() => setShowThemeSelector(!showThemeSelector)}
         >
           <RotatingGear />
-        </button>
+        </div>
         <div
-          className={`p-2 bg-primary fixed z-[100] bg-opacity-80 top-[55%] transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
+          className={`p-2 bg-primary fixed z-[100] bg-opacity-80 transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
             !showThemeSelector ? "-right-52" : "right-0"
           } `}
         >
@@ -68,12 +68,12 @@ function App() {
       }
 
       {/* NAVBAR Toggle Button */}
-      <button
+      <div
         className="fixed top-8 right-8 aspect-square z-20 p-1 lg:hidden bg-white bg-opacity-25 dark:bg-black dark:bg-opacity-25 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out rounded-xl hover:shadow-sm active:scale-90"
         onClick={() => setShowNav(!showNav)}
       >
         <MenuOutlined className="text-2xl p-2 text-dark dark:text-white " />
-      </button>
+      </div>
 
       {/* Main Content */}
       <main

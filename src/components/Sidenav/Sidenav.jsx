@@ -18,13 +18,13 @@ const Sidenav = () => {
         {navLinks.map((item, index) => (
           <li
             key={index}
-            className="w-full h-full py-2 hover:bg-black dark:hover:bg-white dark:hover:bg-opacity-10 hover:bg-opacity-10 transition-all duration-100 ease-in-out"
+            className="w-full h-full hover:bg-black dark:hover:bg-white dark:hover:bg-opacity-10 hover:bg-opacity-10 transition-all duration-100 ease-in-out"
           >
             <Link
               onClick={() => setActiveItem(item.title.toLowerCase())}
               to={item.path}
               className={`
-              w-full h-full block
+              w-full h-full block py-2
               ${
                 activeItem === item.title.toLocaleLowerCase()
                   ? "text-primary text-lg hover:text-primary transition-colors duration-300 font-semibold "
