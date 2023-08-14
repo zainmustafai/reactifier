@@ -5,7 +5,7 @@ import {
   PhoneFilled,
   MessageFilled,
   HomeFilled,
-  MessageOutlined,
+  // MessageOutlined,
 } from "@ant-design/icons";
 import ContactForm from "./components/ContactForm";
 const ICON_CLASSES =
