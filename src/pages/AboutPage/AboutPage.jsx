@@ -32,11 +32,11 @@ const AboutPage = () => {
             experience in working with React, Redux, Node, Express, MongoDB and
             Firebase.
           </p>
-          <table className="table-auto overflow-auto mt-4 w-full">
+          <table className="table-auto overflow-auto mt-4 w-full text-sm md:text-lg">
             <tbody className="w-full ">
               <tr className="">
                 <td className="py-2 font-semibold">Full Name</td>
-                <td className=" py-2">: Muhammad Zain Ul Abidin</td>
+                <td className=" py-2">: M. Zain Ul Abidin</td>
               </tr>
               <tr>
                 <td className="py-2 font-semibold ">Age</td>
@@ -64,7 +64,7 @@ const AboutPage = () => {
                   <a
                     href="https://drive.google.com/file/d/14fdpTj729PqsbQENiNhvTZSG8yprpWLG/view"
                     download={true}
-                    className=" w-full bg-primary py-3 px-4 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100"
+                    className=" w-full bg-primary py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100"
                   >
                     <CloudDownloadOutlined className="font-bold text-2xl mr-2" />
                     Download CV
