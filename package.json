@@ -1,6 +1,7 @@
 {
   "name": "reactifier",
   "homepage": "https://zainmustafai.github.io/reactifier",
+  "description": "Reactifier- The Portfolio Website for Muhammad Zain ul Abidin.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,7 +32,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-    
   },
   "eslintConfig": {
     "extends": [

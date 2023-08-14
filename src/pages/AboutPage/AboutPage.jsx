@@ -34,7 +34,7 @@ const AboutPage = () => {
           </p>
           <table className="table-auto overflow-auto mt-4 w-full text-sm md:text-lg">
             <tbody className="w-full ">
-              <tr className="">
+              <tr>
                 <td className="py-2 font-semibold">Full Name</td>
                 <td className=" py-2">: M. Zain Ul Abidin</td>
               </tr>
