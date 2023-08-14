@@ -9,7 +9,7 @@ const BlogPage = () => {
       <PageHeading>
         Recent <span className="text-primary">Blogs</span>
       </PageHeading>
-      <div className="lg:container grid grid-cols-1 md:grid-cols-2  gap-8">
+      <div className="lg:container grid grid-cols-1 lg:grid-cols-2  gap-8">
         {
           // Loop through the blogPosts array and render a BlogCard component for each item in the array
           blogPosts.map((post) => {

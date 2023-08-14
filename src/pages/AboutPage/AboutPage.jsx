@@ -6,7 +6,7 @@ import Testimonials from "./components/Testimonials";
 
 const AboutPage = () => {
   return (
-    <div className="animate-fade-in " >
+    <div className="animate-fade-in ">
       <PageHeading>
         About <span className="text-primary">Me</span>
       </PageHeading>
@@ -27,9 +27,10 @@ const AboutPage = () => {
             I am <span className="text-primary">Zain Ul Abidin</span>
           </h1>
           <p className="leading-relaxed text-justify">
-            I am full stack web developer. I have Experience in Developing
-            Websites, Web Applications, Mobile Games (Android & IOS), and
-            Flutter Mobile Applications.
+            I am full stack MERN developer. I have Experience in Developing
+            Websites, Web Applications and Database schema design. I have
+            experience in working with React, Redux, Node, Express, MongoDB and
+            Firebase.
           </p>
           <table className="table-auto mt-4 w-full">
             <tbody>

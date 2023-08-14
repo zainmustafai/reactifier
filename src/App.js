@@ -19,7 +19,7 @@ function App() {
         isDarkMode ? "dark" : "light"
       }`}
     >
-      <div>
+      <div className="hidden lg:block" >
         <CustomCursor />
       </div>
       <ScrollToTop />
@@ -43,14 +43,14 @@ function App() {
 
       {/* Side Navigation */}
       <section
-        className={`h-[100vh] max-h-[100vh] relative z-[1234]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] w-[0]  md:w-[300px] md:static dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out `}
+        className={`h-[100vh] max-h-[100vh] relative z-[1234]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] w-[0]  lg:w-[300px] lg:static dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out `}
       >
         <Sidenav />
       </section>
       {/* SMALL SCREEN SIDE NAVIGATION  */}
       {
         <section
-          className={`fixed z-[1234]  ${
+          className={`fixed z-[1234] lg:hidden  ${
             showNav ? "top-0 left-0 " : "top-0 -left-full"
           } h-[100vh] max-h-[100vh] w-[250px]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out`}
         >
@@ -60,7 +60,7 @@ function App() {
 
       {/* NAVBAR Toggle Button */}
       <button
-        className="fixed top-8 right-8 aspect-square z-20 p-1 md:hidden bg-white bg-opacity-25 dark:bg-black hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out rounded-xl hover:shadow-sm active:scale-90"
+        className="fixed top-8 right-8 aspect-square z-20 p-1 lg:hidden bg-white bg-opacity-25 dark:bg-black hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out rounded-xl hover:shadow-sm active:scale-90"
         onClick={() => setShowNav(!showNav)}
       >
         <MenuOutlined className="text-2xl p-2 text-dark dark:text-white " />
