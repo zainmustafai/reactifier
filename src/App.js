@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { MenuOutlined, SettingFilled } from "@ant-design/icons";
 import RoutesContainer from "./RoutesContainer";
 import Sidenav from "./components/Sidenav/Sidenav";
@@ -12,6 +12,12 @@ function App() {
   const [showNav, setShowNav] = useState(false);
   const [showThemeSelector, setShowThemeSelector] = useState(false);
   const { isDarkMode } = useTheme();
+  const myDivRef = useRef(null);
+  const scrollToTop = () => {
+    if (myDivRef.current) {
+      myDivRef.current.scrollTop = 0; // Scroll to the top of the div
+    }
+  };
 
   return (
     <div
@@ -41,6 +47,10 @@ function App() {
 
       {/* Side Navigation */}
       <section
+        onClick={() => {
+          setShowNav(false);
+          scrollToTop();
+        }}
         className={`h-[100vh] max-h-[100vh] relative z-[1234]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] w-[0]  lg:w-[300px] lg:static dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out `}
       >
         <Sidenav />
@@ -48,6 +58,7 @@ function App() {
       {/* SMALL SCREEN SIDE NAVIGATION  */}
       {
         <section
+          onClick={() => setShowNav(false)}
           className={`fixed z-[1234] lg:hidden  ${
             showNav ? "top-0 left-0 " : "top-0 -left-full"
           } h-[100vh] max-h-[100vh] w-[250px]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out`}
@@ -65,7 +76,10 @@ function App() {
       </button>
 
       {/* Main Content */}
-      <main className=" relative z-10 h-[100vh] max-h-[100vh] overflow-y-auto w-full px-8 md:px-12 pb-16 overflow-hidden text-dark dark:text-white transition-all dark:bg-dark duration-500">
+      <main
+        ref={myDivRef}
+        className=" relative z-10 h-[100vh] max-h-[100vh] overflow-y-auto w-full px-8 md:px-12 pb-16 overflow-hidden text-dark dark:text-white transition-all dark:bg-dark duration-500"
+      >
         <RoutesContainer />
       </main>
     </div>

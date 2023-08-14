@@ -11,7 +11,7 @@ const AboutPage = () => {
         About <span className="text-primary">Me</span>
       </PageHeading>
       {/* ABOUT ME SECTION */}
-      <section className=" lg:container flex flex-col lg:flex-row lg:space-x-16 ">
+      <section className=" lg:container flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-16  ">
         {/* LEFT IMAGE */}
         <figure className="lg:w-1/2 aspect-square overflow-hidden border-4 border-opacity-10 border-gray-200">
           <img
