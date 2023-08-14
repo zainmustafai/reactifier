@@ -1,9 +1,11 @@
 import { socialLinks } from "../../data/Datafile";
 import ParticlesComponent from "./components/ParticlesComponent";
+import logo from "./reactifier-portfolio-logo.png";
+
 const HomePage = () => {
   return (
-    <div className="flex justify-center items-center h-full">
-      <div className="" >
+    <div className=" animate-fade-in flex justify-center items-center h-full">
+      <div className="">
         <ParticlesComponent />
       </div>
       <div className="container m-auto text-center">
@@ -13,10 +15,9 @@ const HomePage = () => {
             Zain Ul Abidin.
           </span>
         </h1>
-        <p className="text-gray-600 dark:text-gray-400 mt-4 text-lg">
+        <p className="text-gray-600 dark:text-gray-400 mt-4 text-2xl">
           I'm a freelance react developer. I can provide clean code and pixel
-          perfect design. I also make website more & more interactive with web
-          animations.
+          perfect design.
         </p>
 
         <section className="flex justify-center items-center mt-8 text-lg">
@@ -40,6 +41,16 @@ const HomePage = () => {
           <LinkedinFilled className="p-3 border-2 rounded-full hover:border-primary transition-all duration-500 mx-2 " />
           <GithubFilled className="p-3 border-2 rounded-full hover:border-primary transition-all duration-500 mx-2 " /> */}
         </section>
+      </div>
+
+      {/* LOGO */}
+      <div className="w-20 h-20 fixed bottom-20 right-20 z-50 rounded-full shadow-lg">
+        <img
+          src={logo}
+          alt="Logo"
+          className="w-full h-full object-cover slow-spin"
+        />
+        <p className="text-4xl font-light absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]">R</p>
       </div>
     </div>
   );

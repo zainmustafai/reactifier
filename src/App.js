@@ -1,27 +1,34 @@
+import React, { useState } from "react";
 import { MenuOutlined, SettingFilled } from "@ant-design/icons";
 import RoutesContainer from "./RoutesContainer";
 import Sidenav from "./components/Sidenav/Sidenav";
-import { useState } from "react";
 import { useTheme } from "./ThemeContext";
 import ThemeSwitchIcon from "./components/ThemeSwitchIcon/ThemeSwitchIcon";
+import CustomCursor from "./components/CustomCursor/CustomCursor";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
-  // ------------------------------------------------------------
+  // State for showing navigation and theme selector
   const [showNav, setShowNav] = useState(false);
   const [showThemeSelector, setShowThemeSelector] = useState(false);
   const { isDarkMode } = useTheme();
 
   return (
-    <div className={`flex bg-light   ${isDarkMode ? "dark" : "light"}`}>
+    <div
+      className={`flex justify-self-stretch bg-light ${
+        isDarkMode ? "dark" : "light"
+      }`}
+    >
+      <CustomCursor />
+      <ScrollToTop />
+      {/* Theme Selector */}
       <section>
-        {/* SETTINGS ROTATING GEAR */}
         <button
           className="fixed top-[45%] right-0 z-50"
           onClick={() => setShowThemeSelector(!showThemeSelector)}
         >
-          <RotatingGear className="" />
+          <RotatingGear />
         </button>
-        {/* TOGGLER BUTTON */}
         <div
           className={`p-2 bg-primary fixed z-[100] bg-opacity-80 top-[55%] transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
             showThemeSelector ? "-right-52" : "right-0"
@@ -31,15 +38,25 @@ function App() {
           <ToggleSwitch />
         </div>
       </section>
-      {/* SIDE NAVIGATION */}
-      {/* NAV ELEMENT */}
-      <nav
-        className={`h-[100vh] max-h-[100vh] overflow-auto border-r w-[300px] md:static dark:border-r-darkGray  ${
-          showNav ? "absolute z-[100] left-0 w-[250px]" : "fixed -left-full"
-        } bg-white relative z-50 dark:bg-black transition-all duration-300 ease-in-out `}
+
+      {/* Side Navigation */}
+      <section
+        className={`h-[100vh] max-h-[100vh] relative z-[1234]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] w-[0]  md:w-[300px] md:static dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out `}
       >
         <Sidenav />
-      </nav>
+      </section>
+      {/* SMALL SCREEN SIDE NAVIGATION  */}
+      {
+        <section
+          className={`fixed z-[1234]  ${
+            showNav ? "top-0 left-0 " : "top-0 -left-full"
+          } h-[100vh] max-h-[100vh] w-[250px]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out`}
+        >
+          <Sidenav />
+        </section>
+      }
+
+      {/* Toggle Button */}
       <button
         className="fixed top-8 right-8 aspect-square ripple-container z-20 "
         onClick={() => setShowNav(!showNav)}
@@ -47,16 +64,17 @@ function App() {
         <MenuOutlined className="text-2xl md:hidden p-2 text-dark dark:text-white " />
       </button>
 
+      {/* Main Content */}
       <main className=" relative z-10 h-[100vh] max-h-[100vh] overflow-y-auto w-full px-8 md:px-12 pb-16 overflow-hidden text-dark dark:text-white transition-all dark:bg-dark duration-500">
         <RoutesContainer />
       </main>
-      
     </div>
   );
 }
 
 export default App;
 
+// Component for Rotating Gear
 const RotatingGear = () => {
   return (
     <div className="bg-primary w-10 aspect-square flex items-center">
@@ -65,6 +83,7 @@ const RotatingGear = () => {
   );
 };
 
+// Component for Theme Toggle Switch
 const ToggleSwitch = () => {
   const { isDarkMode, toggleTheme } = useTheme();
   return (

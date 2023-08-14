@@ -4,7 +4,7 @@ import PortfolioCard from "./components/PortfolioCard";
 
 const PortfolioPage = () => {
   return (
-    <div>
+    <div className="animate-fade-in" >
       <PageHeading>Portfolios</PageHeading>
       {/* TAB-BAR */}
       <section className="flex flex-wrap gap-2 justify-center items-center w-full min-h-16 dark:shadow-none transition-all duration-300 ease-in-out ">

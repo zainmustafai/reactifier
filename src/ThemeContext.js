@@ -7,9 +7,12 @@ export const useTheme = () => {
 };
 
 export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(
+    JSON.parse(localStorage.getItem("isDarkMode")) || false
+  );
 
   const toggleTheme = () => {
+    localStorage.setItem("isDarkMode", !isDarkMode);
     setIsDarkMode((prevMode) => !prevMode);
   };
 

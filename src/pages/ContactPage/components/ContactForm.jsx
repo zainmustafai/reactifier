@@ -36,6 +36,7 @@ const ContactForm = () => {
           <label className="block font-medium mb-1">Name</label>
           <input
             type="text"
+            placeholder="ex: John Doe"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -48,6 +49,7 @@ const ContactForm = () => {
           <input
             type="email"
             name="email"
+            placeholder="ex: john@email.com "
             value={formData.email}
             onChange={handleChange}
             className="w-full  dark:bg-dark dark:text-white bg-light text-dark px-3 py-2 rounded-md border-gray-300  dark:border-gray-700 focus:border-primary dark:focus:border-primary-dark focus:outline-none"
@@ -60,6 +62,7 @@ const ContactForm = () => {
             type="text"
             name="subject"
             value={formData.subject}
+            placeholder="ex: Hello"
             onChange={handleChange}
             className="w-full dark:bg-dark dark:text-white bg-light text-dark px-3 py-2 rounded-md border border-gray-300 dark:border-gray-700 focus:border-primary dark:focus:border-primary-dark focus:outline-none"
             required
@@ -68,6 +71,7 @@ const ContactForm = () => {
         <div className="mb-4">
           <label className="block font-medium mb-1">Message</label>
           <textarea
+            placeholder="ex: Hello there!"
             name="message"
             value={formData.message}
             onChange={handleChange}

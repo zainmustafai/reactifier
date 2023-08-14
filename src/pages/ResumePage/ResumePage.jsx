@@ -6,7 +6,7 @@ import { EducationData, ExperienceData } from "../../data/Datafile";
 
 const ResumePage = () => {
   return (
-    <div>
+    <div className="animate-fade-in ">
       <PageHeading>Resume</PageHeading>
       {/* GRID */}
       <section className="grid grid-cols-1 gap-x-4 lg:grid-cols-2 container ">

@@ -1,0 +1,38 @@
+.page-container {
+    perspective: 1000px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+  }
+  
+  .page-front {
+    z-index: 2;
+  }
+  
+  .page-back {
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+  
+  .flipped .page-front {
+    transform: rotateY(-180deg);
+  }
+  
+  .flipped .page-back {
+    transform: rotateY(0deg);
+  }
+  

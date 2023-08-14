@@ -14,7 +14,7 @@ const GridSection = ({ children }) => {
 
 const ServicesPage = () => {
   return (
-    <div>
+    <div className="animate-fade-in">
       <PageHeading>Services</PageHeading>
       <GridSection>
         {Services.map((service) => {

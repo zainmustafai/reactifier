@@ -4,11 +4,11 @@ import BlogCard from "./components/BlogCard";
 
 const BlogPage = () => {
   return (
-    <div>
+    <div className="animate-fade-in" >
       <PageHeading>
         Recent <span className="text-primary">Blogs</span>
       </PageHeading>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div className=" container grid grid-cols-1 md:grid-cols-2 gap-12">
         <BlogCard />
         <BlogCard />
         <BlogCard />

@@ -1,0 +1,21 @@
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: red;
+    opacity: 0.1;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-out, width 0.2s ease-out, height 0.2s ease-out; /* Add smooth transitions */
+    mix-blend-mode: difference; /* Blend mode to make the cursor stand out */
+    z-index: 9999; /* Ensure it's on top of everything */
+  }
+  
+  .custom-cursor.clicked {
+    width: 70px;
+    height: 70px;
+    /* background-color: red; */
+    transition: all 0.3s ease-out ;
+  }

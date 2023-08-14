@@ -1,12 +1,12 @@
 import React from "react";
 import PageHeading from "../../components/Sidenav/PageHeading/PageHeading";
-import avatar from "./avatar.jpg";
+import avatar from "./about-me-page-dispplay-image.png";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 import Testimonials from "./components/Testimonials";
 
 const AboutPage = () => {
   return (
-    <div className="" >
+    <div className="animate-fade-in " >
       <PageHeading>
         About <span className="text-primary">Me</span>
       </PageHeading>

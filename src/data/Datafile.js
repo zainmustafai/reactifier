@@ -6,6 +6,9 @@ import {
   GithubFilled,
 } from "@ant-design/icons";
 
+import profilePicture from './images/profile_picture.png';
+
+
 export const navLinks = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "About", link: "/about" },

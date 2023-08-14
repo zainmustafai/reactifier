@@ -17,13 +17,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/* #tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 100%;
-} */
+
+
+
+/* SLOW SPIN ANIMATION */
+@keyframes slowSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slowSpin 6s linear infinite;
+  /* Adjust the duration for a slower or faster spin */
+}
 
 /* Customize the scrollbar for webkit (Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -31,35 +42,42 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-  background: #121212; /* Dark background color */
+  background: #121212;
+  /* Dark background color */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3a3a3a; /* Color of the thumb */
+  background: #3a3a3a;
+  /* Color of the thumb */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Hover color for the thumb */
-}
-
-/* Customize the scrollbar for Firefox */
-/* Note: Firefox does not support rounded corners for scrollbar */
-
-/* Dark mode */
-body.dark ::-webkit-scrollbar {
-  width: 10px;
-}
-
-body.dark ::-webkit-scrollbar-track {
-  background: #121212;
-}
-
-body.dark ::-webkit-scrollbar-thumb {
-  background: #3a3a3a;
-}
-
-body.dark ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.animate-fade-in {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

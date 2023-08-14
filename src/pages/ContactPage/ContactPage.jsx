@@ -8,7 +8,7 @@ const ICON_CLASSES =
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="animate-fade-in">
       <PageHeading>
         Contact <span className="text-primary">Me</span>
       </PageHeading>
