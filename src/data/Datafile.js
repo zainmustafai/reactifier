@@ -97,7 +97,7 @@ export const navLinks = [
   { id: 3, title: "Services", path: "services" },
   { id: 4, title: "Resume", path: "resume" },
   { id: 5, title: "Portfolio", path: "portfolio" },
-  { id: 6, title: "Blog", path: "/blog" },
+  // { id: 6, title: "Blog", path: "/blog" },
   { id: 7, title: "Contact", path: "contact" },
 ];
 
