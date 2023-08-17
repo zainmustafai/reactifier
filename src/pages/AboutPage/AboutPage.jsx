@@ -30,7 +30,7 @@ const AboutPage = () => {
             </span>
             .
           </h1>
-          <p className="leading-tight tracking-wide first-letter:text-4xl">
+          <p className="leading-tight tracking-wide first-letter:text-4xl text-left sm:text-justify">
             I am a proficient full-stack MERN developer with a track record of
             crafting websites, web applications, and designing database schemas.
             My expertise spans across technologies such as React, Redux, Node,
