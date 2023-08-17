@@ -21,42 +21,55 @@ const AboutPage = () => {
           />
         </figure>
         {/* RIGHT : ABOUT CONTENT */}
-        <main className="text-md lg:w-1/2">
+        <main className="text-md lg:w-1/2 text-justify">
           <h2 className="text-2xl font-bold text-primary">Who am I?</h2>
           <h1 className="text-4xl font-bold mt-2 dark:text-white ">
-            I am <span className="text-primary">Zain Ul Abidin</span>
+            I am{" "}
+            <span className="text-primary underline underline-offset-8">
+              Zain
+            </span>
+            .
           </h1>
-          <p className="leading-relaxed text-justify">
-            I am full stack MERN developer. I have Experience in Developing
-            Websites, Web Applications and Database schema design. I have
-            experience in working with React, Redux, Node, Express, MongoDB and
-            Firebase.
+          <p className="leading-tight tracking-wide first-letter:text-4xl">
+            I am a proficient full-stack MERN developer with a track record of
+            crafting websites, web applications, and designing database schemas.
+            My expertise spans across technologies such as React, Redux, Node,
+            Express & MongoDB.
           </p>
-          <table className="table-auto overflow-auto mt-4 w-full text-sm md:text-lg">
+          <p className="leading-tight tracking-wide first-letter:text-4xl">
+            As a self-motivated learner, I have honed my skills over the past
+            two years, primarily focusing on ReactJS. I have dedicated
+            considerable effort to practical projects during my learning
+            journey. Furthermore, I have successfully contributed to real-world
+            projects, gaining practical experience in addition to my freelance
+            project engagements.
+          </p>
+
+          <table className="table-auto overflow-auto mt-4 w-full text-sm md:text-lg ">
             <tbody className="w-full ">
               <tr>
                 <td className="py-2 font-semibold">Full Name</td>
-                <td className=" py-2">: M. Zain Ul Abidin</td>
+                <td className=" py-2">M. Zain Ul Abidin</td>
               </tr>
               <tr>
                 <td className="py-2 font-semibold ">Age</td>
-                <td className="py-2">: 23</td>
+                <td className="py-2">23</td>
               </tr>
               <tr>
                 <td className="py-2 font-semibold ">Nationality</td>
-                <td className="py-2">: Pakistani</td>
+                <td className="py-2">Pakistani</td>
               </tr>
               <tr>
                 <td className="py-2 font-semibold ">Languages</td>
-                <td className="py-2">: English,Urdu & Punjabi </td>
+                <td className="py-2">English,Urdu & Punjabi </td>
               </tr>
               <tr>
                 <td className="py-2 font-semibold ">Freelance</td>
-                <td className="py-2">: Available</td>
+                <td className="py-2">Available</td>
               </tr>
               <tr>
                 <td className="py-2 font-semibold ">Email</td>
-                <td className="py-2">: zforzain2000@gmail.com</td>
+                <td className="py-2">zforzain2000@gmail.com</td>
               </tr>
               <tr>
                 <td className="py-2 font-semibold ">CV</td>

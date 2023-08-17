@@ -40,9 +40,7 @@ const CustomCursor = () => {
     <div
       className={`custom-cursor ${clicked ? "clicked" : ""} `}
       style={{ left: `${position.x}px`, top: `${position.y}px` }}
-    >
-      <div className=" bg-black dark:bg-white w-[10px] bg-opacity-100 aspect-square -translate-x-[50%] rounded-full "></div>
-    </div>
+    ></div>
   );
 };
 
