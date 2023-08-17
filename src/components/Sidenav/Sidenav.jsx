@@ -22,7 +22,7 @@ const Sidenav = () => {
           >
             <Link
               onClick={() => setActiveItem(item.title.toLowerCase())}
-              to={`/home/${item.path} `}
+              to={`/reactifier/${item.path} `}
               className={`
               w-full h-full block py-2
               ${
