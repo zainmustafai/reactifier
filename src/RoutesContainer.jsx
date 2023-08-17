@@ -12,6 +12,7 @@ import Main from "./pages/Main";
 const RoutesContainer = () => {
   return (
     <Routes>
+      <Route path="/reactifier" element={<Navigate to={"/"} />} />
       <Route path="/" element={<Navigate to="/home" />} />
       <Route path="/home" element={<Main />}>
         <Route path="*" element={<Navigate to={"/"} />} />
