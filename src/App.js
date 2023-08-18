@@ -20,13 +20,11 @@ function App() {
   };
 
   return (
-    <div
-      className={`flex justify-self-stretch bg-light ${
-        isDarkMode ? "dark" : "light"
-      }`}
-    >
+    <div className={`flex justify-self-stretch bg-light ${isDarkMode ? "dark" : "light"}`} onContextMenu={(e) => {e.preventDefault();}}>
       <CustomCursor />
       <ScrollToTop />
+
+      
       {/* Theme Selector */}
       <section>
         <div

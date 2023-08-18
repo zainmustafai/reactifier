@@ -27,52 +27,56 @@ const AboutPage = () => {
             I am{" "}
             <span className="text-primary underline underline-offset-8">
               Zain
-            </span>
+            </span>{" "}
             .
           </h1>
-          <p className="leading-tight tracking-wide first-letter:text-4xl text-left sm:text-justify">
-            I am a proficient full-stack MERN developer with a track record of
-            crafting websites, web applications, and designing database schemas.
-            My expertise spans across technologies such as React, Redux, Node,
-            Express & MongoDB.
-          </p>
-          <p className="leading-tight tracking-wide first-letter:text-4xl">
-            As a self-motivated learner, I have honed my skills over the past
-            two years, primarily focusing on ReactJS. I have dedicated
-            considerable effort to practical projects during my learning
-            journey. Furthermore, I have successfully contributed to real-world
-            projects, gaining practical experience in addition to my freelance
-            project engagements.
+          <p className="leading-relaxed tracking-wide first-letter:text-4xl text-justify text-md">
+            I'm an IT graduate from Jhelum, Pakistan, passionate about website
+            creation and skilled in React JS. Excited to work as a React
+            Developer, I transitioned from Graphic Design on fiverr.com in 2019
+            to programming and web development. Learning through YouTube and
+            online resources, I completed several projects and my final year
+            project using MERN Stack. I'm enthusiastic about React and web app
+            development, plus I enjoy working with databases and APIs.
+            Proficient in HTML, CSS, JavaScript, and React JS, I'm well-equipped
+            for the role, ready to contribute, and eager to tackle challenges
+            with enthusiasm.
           </p>
 
-          <table className="table-auto overflow-auto mt-4 w-full text-sm md:text-lg ">
+          <table className="table overflow-auto mt-4 w-full text-sm md:text-lg  ">
             <tbody className="w-full ">
-              <tr>
-                <td className="py-2 font-semibold">Full Name</td>
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Full Name</td>
                 <td className=" py-2">M. Zain Ul Abidin</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Age</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Age</td>
                 <td className="py-2">23</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Nationality</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Nationality</td>
                 <td className="py-2">Pakistani</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Languages</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Languages</td>
                 <td className="py-2">English,Urdu & Punjabi </td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Freelance</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Freelance</td>
                 <td className="py-2">Available</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Email</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Email</td>
                 <td className="py-2">zforzain2000@gmail.com</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">CV</td>
+              
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">CV</td>
                 <td>
                   <a
                     href="https://drive.google.com/file/d/14fdpTj729PqsbQENiNhvTZSG8yprpWLG/view"
