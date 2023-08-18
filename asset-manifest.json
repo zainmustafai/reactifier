@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactifier/static/css/main.c794e394.css",
-    "main.js": "/reactifier/static/js/main.6d1182bd.js",
+    "main.css": "/reactifier/static/css/main.fef6fe04.css",
+    "main.js": "/reactifier/static/js/main.f54e0937.js",
     "static/js/787.c283684c.chunk.js": "/reactifier/static/js/787.c283684c.chunk.js",
     "static/media/blog-cover.png": "/reactifier/static/media/blog-cover.b205e2b7b0a5c081b5af.png",
     "static/media/portfolio_project_cover.png": "/reactifier/static/media/portfolio_project_cover.c1d1b5dc987acd5b0b45.png",
@@ -9,12 +9,12 @@
     "static/media/about-me-page-dispplay-image.png": "/reactifier/static/media/about-me-page-dispplay-image.6db18c8eaf330b7ca849.png",
     "static/media/reactifier-portfolio-logo.png": "/reactifier/static/media/reactifier-portfolio-logo.c1223cddfcd2cd15cf01.png",
     "index.html": "/reactifier/index.html",
-    "main.c794e394.css.map": "/reactifier/static/css/main.c794e394.css.map",
-    "main.6d1182bd.js.map": "/reactifier/static/js/main.6d1182bd.js.map",
+    "main.fef6fe04.css.map": "/reactifier/static/css/main.fef6fe04.css.map",
+    "main.f54e0937.js.map": "/reactifier/static/js/main.f54e0937.js.map",
     "787.c283684c.chunk.js.map": "/reactifier/static/js/787.c283684c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c794e394.css",
-    "static/js/main.6d1182bd.js"
+    "static/css/main.fef6fe04.css",
+    "static/js/main.f54e0937.js"
   ]
 }
