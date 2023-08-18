@@ -39,11 +39,11 @@ const HomePage = () => {
 
       {/* LOGO */}
       <a href="https://9724054718399.gumroad.com/l/reactifier-portfolio" target="_blank" rel="noreferrer">
-        <div className=" w-16 md:w-10 aspect-square fixed bottom-4 right-4 z-50 rounded-full shadow-lg -rotate-45 ">
+        <div className=" w-16 md:w-10 aspect-square fixed bottom-4 right-4 z-50 rounded-ful -rotate-45 ">
           <img
             src={logo}
             alt="Logo"
-            className="w-[50%] h-[50%] object-cover slow-spin"
+            className="w-[50%] h-[50%] object-cover slow-spin scale-0 md:scale-150 shadow-lg "
           />
           <p className="text-primary text-4xl underline underline-offset-8 font-light absolute top-[100%] left-[25%] -translate-x-[50%] -translate-y-[50%] signature-text">
           ~zain~
