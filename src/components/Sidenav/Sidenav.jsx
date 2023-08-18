@@ -40,7 +40,7 @@ const Sidenav = () => {
         <span className="text-sm">
           Made with ❤️ by{" "}
           <a
-            href="https://www.github.com/zainmustafai"
+            href="https://www.fiverr.com/zainmustafai"
             className="text-blue-500 underline"
           >
             Zain
