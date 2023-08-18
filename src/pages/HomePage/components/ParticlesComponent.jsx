@@ -2,8 +2,13 @@ import Particles from "react-tsparticles";
 import { useCallback } from "react";
 import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
-import { options } from "./options";
+import { optionsDark,optionsLight } from "./options";
+import { useTheme } from "../../../ThemeContext";
 const ParticlesComponent = () => {
+
+  const { isDarkMode } = useTheme();
+  const options = isDarkMode ? optionsDark : optionsLight;
+  
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
