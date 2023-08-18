@@ -34,7 +34,7 @@ function App() {
           <RotatingGear />
         </div>
         <div
-          className={`p-2 rounded-bl-full rounded-tl-full bg-primary fixed top-[75vh] z-[100] bg-opacity-80 transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
+          className={`p-2 rounded-bl-full rounded-tl-full bg-primary fixed top-[60vh] z-[100] bg-opacity-80 transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
             !showThemeSelector ? "-right-52" : "right-0"
           } `}
         >
