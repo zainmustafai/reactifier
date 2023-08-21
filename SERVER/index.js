@@ -4,6 +4,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import { connect } from "mongoose";
 import configureDatabase from "./configs/mongoDB.config.js";
+import { userRouter } from "./routes/user.routes.js";
 // Configure environment variables:
 dotenv.config();
 const _PORT = process.env.PORT || 5000;
@@ -16,6 +17,8 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Hello from Express!");
 });
+app.get("/api", (req, res) => {res.send("Hello from Express API!");});
+app.use("/api/users", userRouter);
 
 const startServer = async () => {
   try {

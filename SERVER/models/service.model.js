@@ -5,9 +5,9 @@ const serviceSchema = mongoose.Schema({
   serviceCategory: String,
 
   price: Number,
+  servicePicture: String,
   createdAt: {},
   updatedAt: {},
-  servicePicture: String,
 });
 
 const Service = mongoose.model("Service", serviceSchema);
