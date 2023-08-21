@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <div className={`flex justify-self-stretch bg-light ${isDarkMode ? "dark" : "light"}`} onContextMenu={(e) => {e.preventDefault();}}>
+    <div className={`hide-scrollbar  flex justify-self-stretch bg-light ${isDarkMode ? "dark" : "light"}`} onContextMenu={(e) => {e.preventDefault();}}>
       <CustomCursor />
       <ScrollToTop />
 

@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeading from "../../components/Sidenav/PageHeading/PageHeading";
-import avatar from "./about-me-page-dispplay-image.png";
+import avatar from "./about-me-page-dispplay-image.jpg";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 // import Testimonials from "./components/Testimonials";
 
@@ -17,11 +17,11 @@ const AboutPage = () => {
           <img
             src={avatar}
             alt="about"
-            className=" w-full h-full object-cover "
+            className=" w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
           />
         </figure>
         {/* RIGHT : ABOUT CONTENT */}
-        <main className="text-md lg:w-1/2 text-justify">
+        <main className="text-md lg:w-1/2">
           <h2 className="text-2xl font-bold text-primary">Who am I?</h2>
           <h1 className="text-4xl font-bold mt-2 dark:text-white ">
             I am{" "}
@@ -30,7 +30,7 @@ const AboutPage = () => {
             </span>{" "}
             .
           </h1>
-          <p className="leading-relaxed tracking-wide first-letter:text-4xl text-justify text-md">
+          <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 lg:text-justify ">
             I'm an IT graduate from Jhelum, Pakistan, passionate about website
             creation and skilled in React JS. Excited to work as a React
             Developer, I transitioned from Graphic Design on fiverr.com in 2019
