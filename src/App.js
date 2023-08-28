@@ -85,12 +85,12 @@ function App() {
 }
 
 export default App;
-
 // Component for Rotating Gear
 const RotatingGear = () => {
   return (
     <div className=" rounded-tl-full rounded-bl-full  bg-primary w-10 aspect-square flex items-center">
       <SettingFilled className="text-2xl animate-spin w-10 textl-2xl flex items-center justify-center" />
+      
     </div>
   );
 };
