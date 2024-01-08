@@ -12,7 +12,7 @@ const Sidenav = () => {
           <img
             src={profileImage}
             alt="profile"
-            className="w-full h-full rounded-full border-[8px]  dark:border-dark  "
+            className="w-full h-full rounded-full border-[8px]  dark:border-dark grayscale hover:grayscale-0 transition-all duration-300 ease-in-out  "
           />
         </figure>
         {navLinks.map((item, index) => (
@@ -22,7 +22,7 @@ const Sidenav = () => {
           >
             <Link
               onClick={() => setActiveItem(item.title.toLowerCase())}
-              to={item.path}
+              to={`/reactifier/${item.path} `}
               className={`
               w-full h-full block py-2
               ${
@@ -31,7 +31,7 @@ const Sidenav = () => {
                   : "hover:text-primary font-semibold transition-colors duration-300 "
               }`}
             >
-              {item.title}
+              {item?.title?.toUpperCase()}
             </Link>
           </li>
         ))}
@@ -40,7 +40,7 @@ const Sidenav = () => {
         <span className="text-sm">
           Made with ❤️ by{" "}
           <a
-            href="https://www.github.com/zainmustafai"
+            href="https://www.fiverr.com/zainmustafai"
             className="text-blue-500 underline"
           >
             Zain

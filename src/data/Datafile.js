@@ -92,12 +92,12 @@ export const blogPosts = [
 ];
 
 export const navLinks = [
-  { id: 1, title: "Home", path: "/" },
+  { id: 1, title: "Home", path: "home" },
   { id: 2, title: "About", path: "about" },
   { id: 3, title: "Services", path: "services" },
   { id: 4, title: "Resume", path: "resume" },
   { id: 5, title: "Portfolio", path: "portfolio" },
-  { id: 6, title: "Blog", path: "/blog" },
+  // { id: 6, title: "Blog", path: "/blog" },
   { id: 7, title: "Contact", path: "contact" },
 ];
 
@@ -208,6 +208,8 @@ export const PricingPlans = [
       "Limited Support",
     ],
     color: "bg-primary",
+    description:
+      "Affordable and value-packed basic package to kickstart your project.",
   },
   {
     id: 2,
@@ -221,6 +223,8 @@ export const PricingPlans = [
       "API Development",
     ],
     color: "bg-secondary",
+    description:
+      "Standard package for those who want to take their project to the next level.",
   },
   {
     id: 3,
@@ -235,6 +239,8 @@ export const PricingPlans = [
       "Mobile App Development",
     ],
     color: "bg-tertiary",
+    description:
+      "Unlock premium benefits and top-tier service with the Premium plan",
   },
 ];
 
