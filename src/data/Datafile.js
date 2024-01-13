@@ -270,6 +270,14 @@ export const EducationData = [
 
 export const ExperienceData = [
   {
+    id: 4,
+    title: "FullStack Web Developer",
+    institute: "Interactive Tech Solutions",
+    duration: "January, 2024 - Present",
+    description:
+      "I am currently working as a full stack web developer at Interactive Tech Solutions.",
+  },
+  {
     id: 1,
     title: "Full Stack Web Developer",
     institute: "Fiverr.com",
@@ -281,7 +289,7 @@ export const ExperienceData = [
     id: 2,
     title: "Full Stack Web Developer",
     institute: "DAR BPO",
-    duration: "2023 - Present",
+    duration: "June,2023 - August,2023",
     description:
       "I have experience in developing websites using React, HTML, CSS, JavaScript and many more.",
   },
@@ -289,10 +297,11 @@ export const ExperienceData = [
     id: 3,
     title: "Logo Designer",
     institute: "Fiverr.com",
-    duration: "2019 - Present",
+    duration: "2019 - 2023",
     description:
       "I kick started my career as a logo designer. Later on, I started working as a web developer. ",
   },
+
 ];
 
 /***-------------------------------------------------- */

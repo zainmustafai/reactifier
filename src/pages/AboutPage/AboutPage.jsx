@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeading from "../../components/Sidenav/PageHeading/PageHeading";
-import avatar from "./about-me-page-dispplay-image.jpg";
+import avatar from "./about-me-page-dispplay-image.png";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 // import Testimonials from "./components/Testimonials";
 
@@ -79,7 +79,7 @@ const AboutPage = () => {
                 <td className="py-2 font-semibold p-1 ">CV</td>
                 <td>
                   <a
-                    href="https://drive.google.com/file/d/14fdpTj729PqsbQENiNhvTZSG8yprpWLG/view"
+                    href="https://drive.google.com/file/d/1Z_pKa9G-gpHIzI-du4xlzOlsVkD2KiRA/view?usp=drive_link"
                     download={true}
                     className=" w-full bg-primary py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100"
                   >
