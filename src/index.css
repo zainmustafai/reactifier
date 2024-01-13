@@ -16,6 +16,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navlink-active{
+  background-color: linear-gradient(90deg, rgba(255,0,222,1) 0%, rgba(255,0,222,1) 100%);
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

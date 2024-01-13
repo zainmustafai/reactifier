@@ -8,8 +8,7 @@ import {
   MessageOutlined,
 } from "@ant-design/icons";
 // import ContactForm from "./components/ContactForm";
-const ICON_CLASSES =
-  "text-2xl md:text-4xl pr-4 border-r py-10 border-lightGray dark:border-darkBlue text-primary";
+const ICON_CLASSES = "text-2xl md:text-4xl pr-4 border-r py-10 border-lightGray dark:border-light text-primary";
 
 const ContactPage = () => {
   return (
@@ -23,7 +22,7 @@ const ContactPage = () => {
           <h2 className="text-3xl font-bold mb-4">📲 Contact Info</h2>
           <ContactInfoCard
             title={"Call me"}
-            value={"+923021554648"}
+            value={"🇵🇰 +92 302 155 46 48"}
             icon={<PhoneFilled className={ICON_CLASSES} />}
           />
 
