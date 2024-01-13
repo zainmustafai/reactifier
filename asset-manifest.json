@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/reactifier/static/css/main.cff15ebc.css",
-    "main.js": "/reactifier/static/js/main.263301c8.js",
+    "main.js": "/reactifier/static/js/main.d9902b5b.js",
     "static/js/787.618af9df.chunk.js": "/reactifier/static/js/787.618af9df.chunk.js",
     "static/media/blog-cover.png": "/reactifier/static/media/blog-cover.5a57c86d3f1f45fa5f2a.png",
     "static/media/portfolio_project_cover.png": "/reactifier/static/media/portfolio_project_cover.9f2c26b1760489eb4a71.png",
@@ -11,11 +11,11 @@
     "static/media/reactifier-portfolio-logo.png": "/reactifier/static/media/reactifier-portfolio-logo.49e7bae01013bbf95f76.png",
     "index.html": "/reactifier/index.html",
     "main.cff15ebc.css.map": "/reactifier/static/css/main.cff15ebc.css.map",
-    "main.263301c8.js.map": "/reactifier/static/js/main.263301c8.js.map",
+    "main.d9902b5b.js.map": "/reactifier/static/js/main.d9902b5b.js.map",
     "787.618af9df.chunk.js.map": "/reactifier/static/js/787.618af9df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cff15ebc.css",
-    "static/js/main.263301c8.js"
+    "static/js/main.d9902b5b.js"
   ]
 }
