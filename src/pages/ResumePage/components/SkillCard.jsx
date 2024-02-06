@@ -30,7 +30,7 @@ const SkillCard = ({ skillName, skillScore }) => {
       <h1 className="text-xl font-bold">{skillName}</h1>
       <div className="flex gap-4 items-center ">
         <span className="min-w-[8%] pr-1">{currentScore}%</span>
-        <div className="bg-lightGray dark:bg-darkBlue h-[6px] w-full">
+        <div className="bg-lightGray dark:bg-black h-[6px] w-full">
           <div
             ref={cardRef}
             className={`bg-primary h-full transition-width duration-75 ease-in`}
@@ -52,7 +52,7 @@ export default SkillCard;
 //       <h1>HTML</h1>
 //       <div className="flex gap-4 items-center ">
 //         <span>{skillScore}%</span>
-//         <div className="bg-lightGray dark:bg-darkBlue h-[6px] w-full ">
+//         <div className="bg-lightGray dark:bg-black h-[6px] w-full ">
 //           {/* LIGHT COLORED SKILL-SCORE */}
 //           <div className={`bg-primary h-full`}></div>
 //         </div>
