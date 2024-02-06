@@ -25,16 +25,12 @@ const AboutPage = () => {
         About <span className="text-primary">Me</span>
       </PageHeading>
       {/* ABOUT ME SECTION */}
-      <section className=" lg:container flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-16  ">
+      <section className="lg:container flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-16  ">
         {/* LEFT IMAGE */}
-        <figure
-
-          className="lg:w-1/2 aspect-square overflow-hidden border-4 border-opacity-10 border-gray-200">
+        <figure className="lg:w-1/2 aspect-square overflow-hidden border-4 border-opacity-10 border-gray-200">
           <img
             src={avatar2}
-            // onMouseEnter={e => {e.currentTarget.src = avatar;}}
-            // onMouseLeave={e => {e.currentTarget.src = avatar2;}}
-            alt="about"
+            alt="muhammad-zain-ul-abidin standing in glasses in a grassy park."
             className=" w-full h-full flex-none object-cover object-center grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
           />
         </figure>

@@ -4,7 +4,11 @@ import logo from "./reactifier-portfolio-logo.png";
 
 const HomePage = () => {
   return (
-    <div className=" animate-fade-in flex justify-center items-center h-full">
+    <div className=" animate-fade-in flex justify-center items-center h-full"
+      onScroll={(e) => {
+        
+      }}
+    >
       <div className="">
         <ParticlesComponent />
       </div>
