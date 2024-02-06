@@ -92,12 +92,12 @@ export const blogPosts = [
 ];
 
 export const navLinks = [
-  { id: 1, title: "Home", path: "/" },
+  { id: 1, title: "Home", path: "home" },
   { id: 2, title: "About", path: "about" },
   { id: 3, title: "Services", path: "services" },
   { id: 4, title: "Resume", path: "resume" },
   { id: 5, title: "Portfolio", path: "portfolio" },
-  { id: 6, title: "Blog", path: "/blog" },
+  // { id: 6, title: "Blog", path: "/blog" },
   { id: 7, title: "Contact", path: "contact" },
 ];
 
@@ -208,6 +208,8 @@ export const PricingPlans = [
       "Limited Support",
     ],
     color: "bg-primary",
+    description:
+      "Affordable and value-packed basic package to kickstart your project.",
   },
   {
     id: 2,
@@ -221,6 +223,8 @@ export const PricingPlans = [
       "API Development",
     ],
     color: "bg-secondary",
+    description:
+      "Standard package for those who want to take their project to the next level.",
   },
   {
     id: 3,
@@ -235,6 +239,8 @@ export const PricingPlans = [
       "Mobile App Development",
     ],
     color: "bg-tertiary",
+    description:
+      "Unlock premium benefits and top-tier service with the Premium plan",
   },
 ];
 
@@ -264,6 +270,14 @@ export const EducationData = [
 
 export const ExperienceData = [
   {
+    id: 4,
+    title: "FullStack Web Developer",
+    institute: "Interactive Tech Solutions",
+    duration: "January, 2024 - Present",
+    description:
+      "I am currently working as a full stack web developer at Interactive Tech Solutions.",
+  },
+  {
     id: 1,
     title: "Full Stack Web Developer",
     institute: "Fiverr.com",
@@ -275,7 +289,7 @@ export const ExperienceData = [
     id: 2,
     title: "Full Stack Web Developer",
     institute: "DAR BPO",
-    duration: "2023 - Present",
+    duration: "June,2023 - August,2023",
     description:
       "I have experience in developing websites using React, HTML, CSS, JavaScript and many more.",
   },
@@ -283,10 +297,11 @@ export const ExperienceData = [
     id: 3,
     title: "Logo Designer",
     institute: "Fiverr.com",
-    duration: "2019 - Present",
+    duration: "2019 - 2023",
     description:
       "I kick started my career as a logo designer. Later on, I started working as a web developer. ",
   },
+
 ];
 
 /***-------------------------------------------------- */

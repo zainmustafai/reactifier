@@ -20,23 +20,21 @@ function App() {
   };
 
   return (
-    <div
-      className={`flex justify-self-stretch bg-light ${
-        isDarkMode ? "dark" : "light"
-      }`}
-    >
+    <div className={`hide-scrollbar  flex justify-self-stretch bg-light ${isDarkMode ? "dark" : "light"}`} onContextMenu={(e) => {e.preventDefault();}}>
       <CustomCursor />
       <ScrollToTop />
+
+      
       {/* Theme Selector */}
       <section>
         <div
-          className="fixed  top-[60%] right-0 z-50"
+          className="fixed  top-[70vh] right-0 z-50"
           onClick={() => setShowThemeSelector(!showThemeSelector)}
         >
           <RotatingGear />
         </div>
         <div
-          className={`p-2 bg-primary fixed z-[100] bg-opacity-80 transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
+          className={`p-2 rounded-bl-full rounded-tl-full bg-primary fixed top-[60vh] z-[100] bg-opacity-80 transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
             !showThemeSelector ? "-right-52" : "right-0"
           } `}
         >
@@ -87,12 +85,12 @@ function App() {
 }
 
 export default App;
-
 // Component for Rotating Gear
 const RotatingGear = () => {
   return (
-    <div className="bg-primary w-10 aspect-square flex items-center">
+    <div className=" rounded-tl-full rounded-bl-full  bg-primary w-10 aspect-square flex items-center">
       <SettingFilled className="text-2xl animate-spin w-10 textl-2xl flex items-center justify-center" />
+      
     </div>
   );
 };

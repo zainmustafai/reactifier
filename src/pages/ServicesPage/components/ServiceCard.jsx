@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceCard = ({ title, description, icon }) => {
   return (
-    <div className="bg-white border-b-8 border-black hover:border-primary hover:translate-y-1 transition-all duration-500  dark:bg-darkBlue p-4 shadow-lg h-full">
+    <div className="bg-white border-b-8 border-black hover:border-primary hover:translate-y-1 transition-all duration-500  dark:bg-black p-4 shadow-lg h-full">
       <h1>
         <span className="text-4xl">{icon}</span>
       </h1>

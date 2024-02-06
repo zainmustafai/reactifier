@@ -3,5 +3,3 @@ git commit -m 'latest changes ooooffice'
 git branch -M zainfolio
 git push -u origin zainfolio
 npm run deploy -- -m "Deploy React app to GitHub Pages"
-
-  "homepage": "https://zainmustafai.github.io/reactifier",

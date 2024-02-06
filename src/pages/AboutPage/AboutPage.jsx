@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeading from "../../components/Sidenav/PageHeading/PageHeading";
-import avatar from "./about-me-page-dispplay-image.jpg";
+import avatar from "./about-me-page-dispplay-image.png";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 // import Testimonials from "./components/Testimonials";
 
@@ -17,52 +17,69 @@ const AboutPage = () => {
           <img
             src={avatar}
             alt="about"
-            className=" w-full h-full object-cover "
+            className=" w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out"
           />
         </figure>
         {/* RIGHT : ABOUT CONTENT */}
         <main className="text-md lg:w-1/2">
           <h2 className="text-2xl font-bold text-primary">Who am I?</h2>
           <h1 className="text-4xl font-bold mt-2 dark:text-white ">
-            I am <span className="text-primary">Zain Ul Abidin</span>
+            I am{" "}
+            <span className="text-primary underline underline-offset-8">
+              Zain
+            </span>{" "}
+            .
           </h1>
-          <p className="leading-relaxed text-justify">
-            I am full stack MERN developer. I have Experience in Developing
-            Websites, Web Applications and Database schema design. I have
-            experience in working with React, Redux, Node, Express, MongoDB and
-            Firebase.
+          <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 lg:text-justify ">
+            I'm an IT graduate from Jhelum, Pakistan, passionate about website
+            creation and skilled in React JS. Excited to work as a React
+            Developer, I transitioned from Graphic Design on fiverr.com in 2019
+            to programming and web development. Learning through YouTube and
+            online resources, I completed several projects and my final year
+            project using MERN Stack. I'm enthusiastic about React and web app
+            development, plus I enjoy working with databases and APIs.
+            Proficient in HTML, CSS, JavaScript, and React JS, I'm well-equipped
+            for the role, ready to contribute, and eager to tackle challenges
+            with enthusiasm.
           </p>
-          <table className="table-auto overflow-auto mt-4 w-full text-sm md:text-lg">
+
+          <table className="table overflow-auto mt-4 w-full text-sm md:text-lg  ">
             <tbody className="w-full ">
-              <tr>
-                <td className="py-2 font-semibold">Full Name</td>
-                <td className=" py-2">: M. Zain Ul Abidin</td>
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Full Name</td>
+                <td className=" py-2">M. Zain Ul Abidin</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Age</td>
-                <td className="py-2">: 23</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Age</td>
+                <td className="py-2">23</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Nationality</td>
-                <td className="py-2">: Pakistani</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Nationality</td>
+                <td className="py-2">Pakistani</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Languages</td>
-                <td className="py-2">: English,Urdu & Punjabi </td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Languages</td>
+                <td className="py-2">English,Urdu & Punjabi </td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Freelance</td>
-                <td className="py-2">: Available</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Freelance</td>
+                <td className="py-2">Available</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">Email</td>
-                <td className="py-2">: zforzain2000@gmail.com</td>
+
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">Email</td>
+                <td className="py-2">zforzain2000@gmail.com</td>
               </tr>
-              <tr>
-                <td className="py-2 font-semibold ">CV</td>
+              
+              <tr className="table-row">
+                <td className="py-2 font-semibold p-1 ">CV</td>
                 <td>
                   <a
-                    href="https://drive.google.com/file/d/14fdpTj729PqsbQENiNhvTZSG8yprpWLG/view"
+                    href="https://drive.google.com/file/d/1Z_pKa9G-gpHIzI-du4xlzOlsVkD2KiRA/view?usp=drive_link"
                     download={true}
                     className=" w-full bg-primary py-2 px-4 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-100"
                   >
