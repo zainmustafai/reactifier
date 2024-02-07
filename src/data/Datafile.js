@@ -130,7 +130,7 @@ export const socialLinks = [
     id: 5,
     name: "Github",
     icon: <GithubFilled />,
-    link: "https://www.github.com/zforzain2000/",
+    link: "https://www.github.com/zainmustafai",
   },
 ];
 
