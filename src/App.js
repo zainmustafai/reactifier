@@ -20,11 +20,9 @@ function App() {
   };
 
   return (
-    <div className={`hide-scrollbar  flex justify-self-stretch bg-light ${isDarkMode ? "dark" : "light"}`} onContextMenu={(e) => {e.preventDefault();}}>
+    <div className={`hide-scrollbar  flex justify-self-stretch bg-light ${isDarkMode ? "dark" : "light"}`} onContextMenu={(e) => { e.preventDefault(); }}>
       <CustomCursor />
       <ScrollToTop />
-
-      
       {/* Theme Selector */}
       <section>
         <div
@@ -34,9 +32,8 @@ function App() {
           <RotatingGear />
         </div>
         <div
-          className={`p-2 rounded-bl-full rounded-tl-full bg-primary fixed top-[60vh] z-[100] bg-opacity-80 transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${
-            !showThemeSelector ? "-right-52" : "right-0"
-          } `}
+          className={`p-2 rounded-bl-full rounded-tl-full bg-primary fixed top-[60vh] z-[100] bg-opacity-80 transition-all duration-300 delay-75 ease-linear flex gap-2 items-center ${!showThemeSelector ? "-right-52" : "right-0"
+            } `}
         >
           <ThemeSwitchIcon isDark={isDarkMode ? true : false} />
           <ToggleSwitch />
@@ -49,7 +46,7 @@ function App() {
           setShowNav(false);
           scrollToTop();
         }}
-        className={`h-[100vh] max-h-[100vh] relative z-[1234]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] w-[0]  lg:w-[300px] lg:static dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out `}
+        className={`h-[100svh] max-h-[100svh] relative z-[1234]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] w-[0]  lg:w-[300px] lg:static dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out `}
       >
         <Sidenav />
       </section>
@@ -57,9 +54,8 @@ function App() {
       {
         <section
           onClick={() => setShowNav(false)}
-          className={`fixed z-[1234] lg:hidden  ${
-            showNav ? "top-0 left-0 " : "top-0 -left-full"
-          } h-[100vh] max-h-[100vh] w-[250px]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out`}
+          className={`fixed z-[1234] lg:hidden  ${showNav ? "top-0 left-0 " : "top-0 -left-full"
+            } h-[100vh] max-h-[100vh] w-[250px]  overflow-y-auto  border-lightGray dark:border-darkBlue border-r-[2px] dark:border-r-darkGray  bg-white dark:bg-black transition-all duration-300 ease-in-out`}
         >
           <Sidenav />
         </section>
@@ -67,7 +63,7 @@ function App() {
 
       {/* NAVBAR Toggle Button */}
       <div
-        className="fixed top-8 right-8 aspect-square z-20 p-1 lg:hidden bg-white bg-opacity-25 dark:bg-black dark:bg-opacity-25 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out rounded-xl hover:shadow-sm active:scale-90"
+        className="fixed top-8 right-8 aspect-square z-20 p-1 animate-pulse hover:animate-none lg:hidden bg-white bg-opacity-25 dark:bg-black dark:bg-opacity-25 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300 ease-in-out rounded-xl hover:shadow-sm active:scale-90"
         onClick={() => setShowNav(!showNav)}
       >
         <MenuOutlined className="text-2xl p-2 text-dark dark:text-white " />
@@ -90,7 +86,7 @@ const RotatingGear = () => {
   return (
     <div className=" rounded-tl-full rounded-bl-full  bg-primary w-10 aspect-square flex items-center">
       <SettingFilled className="text-2xl animate-spin w-10 textl-2xl flex items-center justify-center" />
-      
+
     </div>
   );
 };
