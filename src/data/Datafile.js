@@ -146,7 +146,7 @@ export const AboutPageData = {
   fullName: "Zain Ul Abidin",
   age: "23",
   title: "Full Stack Web Developer",
-  description: `I am full stack web developer. I have Experience in Developing Websites, Web Applications, Mobile Games (Android & IOS), and Flutter Mobile Applications. We are providing clean code.`,
+  description: "I am full stack web developer. I have Experience in Developing Websites, Web Applications, Mobile Games (Android & IOS), and Flutter Mobile Applications. We are providing clean code.",
   nationality: "Pakistani",
   languages: "English, Urdu,Punjabi",
   cvLink: "https://www.google.com/",
@@ -163,14 +163,14 @@ export const Services = [
     icon: "💻", // Add an appropriate icon
     color: "bg-primary", // Choose a color class from your styles
   },
-  {
-    id: 2,
-    title: "Database Design",
-    description:
-      "I have experience in designing databases using MySQL, MongoDB, Firebase, and many more.",
-    icon: "🗃️", // Add an appropriate icon
-    color: "bg-secondary", // Choose a color class from your styles
-  },
+  // {
+  //   id: 2,
+  //   title: "Database Design",
+  //   description:
+  //     "I have experience in designing databases using MySQL, MongoDB, Firebase, and many more.",
+  //   icon: "🗃️", // Add an appropriate icon
+  //   color: "bg-secondary", // Choose a color class from your styles
+  // },
   {
     id: 3,
     title: "Restful API Development",
@@ -187,20 +187,25 @@ export const Services = [
   //   icon: "📱", // Add an appropriate icon
   //   color: "bg-quaternary", // Choose a color class from your styles
   // },
+  // {
+  //   id: 5,
+  //   title: "Fully Responsive",
+  //   description: "I can make your website fully responsive for all devices.",
+  //   icon: "📱", // Add an appropriate icon
+  // },
   {
-    id: 5,
-    title: "Fully Responsive",
-    description: "I can make your website fully responsive for all devices.",
-    icon: "📱", // Add an appropriate icon
-  },
-  // s
+    id: 6,
+    title: "Search Engine Optimization",
+    description: "I can make your website SEO friendly, so that it can rank on google & other search engines.",
+    icon: "🔍"
+  }
 ];
 
 export const PricingPlans = [
   {
     id: 1,
     title: "Basic Plan",
-    price: "$190",
+    price: "$500",
     features: [
       "Web Development",
       "Database Design",
@@ -214,7 +219,7 @@ export const PricingPlans = [
   {
     id: 2,
     title: "Standard Plan",
-    price: "$490",
+    price: "$1000",
     features: [
       "Web Development",
       "Database Design",
@@ -229,7 +234,7 @@ export const PricingPlans = [
   {
     id: 3,
     title: "Premium Plan",
-    price: "$990",
+    price: "$2000",
     features: [
       "Web Development",
       "Database Design",
